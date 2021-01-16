@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<style>
+p {
+  color: rgb(200, 200, 200);
+}
+
+body {
+  background-color: rgb(24, 34, 49);
+}
+input.nlistchoose {
+  color: rgb(200,200,200);
+}
+
+input.myFile{
+  color: rgb(200, 200, 200);
+}
+
+form {
+  color: rgb(200, 200, 200)
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+</style>-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+</head>
+<body onload="getrandint()">
+<p>Enter Your Phone Number</p>
+
+<div class="slidecontainer">
+  <input type="range" min="1000000000" max="9999999999" value="1000000000" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+<script>
+  function getRandomIntRange(min, max) {
+  min = min
+  max = max
+  let rannum1 = Math.random() * (max - min) + min;
+  let rannum = Math.round(rannum1)
+  return rannum
+}
+</script>
+
+<p>---------------------------</p>
+
+<script type="text/javascript">
+    var clicks = 1000000000;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onClick="onClick()">Add 1</button>
+    <p>Phone Number: <a id="clicks">1000000000</a></p>
+
+<p>---------------------------</p>
+
+<input type="file" id="myFile" class="myFile" accept=".txt">
+
+<p>Upload Phone Number .txt File</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myFile");
+  x.disabled = true;
+}
+</script>
+
+<p>---------------------------</p>
+<script>
+  function getrandint(){
+    num = getRandomIntRange(1000000000, 9999999999)
+    document.getElementById("number4").innerHTML = num
+  }
+</script>
+<p>Is this your phone number? <strong><a id="number4"></a></strong></p>
+<button>Yes</button>
+<button type="button" onClick="getrandint()">No</button>
+
+<p>---------------------------</p>
+
+<div>
+<select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select><select>
+  <option value="0" class="nlistchoose">0</option>
+  <option value="1" class="nlistchoose">1</option>
+  <option value="2" class="nlistchoose">2</option>
+  <option value="3" class="nlistchoose">3</option>
+  <option value="4" class="nlistchoose">4</option>
+  <option value="5" class="nlistchoose">5</option>
+  <option value="6" class="nlistchoose">6</option>
+  <option value="7" class="nlistchoose">7</option>
+  <option value="8" class="nlistchoose">8</option>
+  <option value="9" class="nlistchoose">9</option>
+</select>
+</div>
+
+<p>---------------------------</p>
+
+<form>
+  Phone Number:<br>
+  <input type="text" name="0" value="0" maxlength="1" size="1"><input type="text" name="1" value="0" maxlength="1" size="1"><input type="text" name="2" value="0" maxlength="1" size="1"><input type="text" name="3" value="0" maxlength="1" size="1"><input type="text" name="4" value="0" maxlength="1" size="1"><input type="text" name="5" value="0" maxlength="1" size="1"><input type="text" name="6" value="0" maxlength="1" size="1"><input type="text" name="7" value="0" maxlength="1" size="1"><input type="text" name="8" value="0" maxlength="1" size="1"><input type="text" name="9" value="0" maxlength="1" size="1">
+</form> 
+
+<p>---------------------------</p>
+
+<script>
+  function getrandintclock(){
+    numc = getRandomIntRange(1000000000, 9999999999)
+    document.getElementById("number5").innerHTML = numc
+  }
+  setInterval(getrandintclock, 1)
+</script>
+<p>Is this your phone number? <strong><a id="number5"></a></strong></p>
+<button onClock="break">Yes</button>
+<button type="button" onClick="getrandintclock()">No</button>
+
+<p>---------------------------</p>
+
+<p> Area Code: </p><input type="file" id="myFile" class="myFile" accept=".txt" value="State Code">
+<p>The other digits: </p><input type="file" id="myFile" class="myFile" accept=".txt" value="The other 7 digits">
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myFile");
+  x.disabled = true;
+}
+</script>
+
+<p>---------------------------</p>
+
+<script type="text/javascript">
+    var clicks2 = 1000000000;
+    function onClick2() {
+        clicks2 += 1;
+        document.getElementById("clicks2").innerHTML = clicks2;
+    };
+		setInterval(onClick2, 1)
+    </script>
+    <p>Phone Number: <a id="clicks2">1000000000</a></p>
+
+<p>---------------------------</p>
+
+</body>
+</html>
